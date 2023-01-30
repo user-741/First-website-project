@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Orbitron:wght@400;500;600;900&display=swap');
+
+*{
+   font-family: 'Fredoka One', cursive;
+   font-family: 'Orbitron', sans-serif;
+   color: #E0BAFF;
+}
+
+html{
+    background-color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .loading {
+    width: 100%;
+    height: 100vh;
+    background: url(Background.gif) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.25;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #E0BAFF;
+    opacity: 1;
+  }
+  
+ 
+  .center-image {
+    position: absolute;
+    top: 1%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    animation: spin 5s linear infinite;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate3d(0, 1, 0, 0deg);
+    }
+    to {
+      transform: rotate3d(0, 1, 0, 360deg);
+    }
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+.btn {
+    position: absolute;
+    top: 90%;
+    left: 48%;
+
+}
+
+
+.button{ 
+    background-color:black;
+    font-size: 20px;
+    cursor: pointer;
+}
+

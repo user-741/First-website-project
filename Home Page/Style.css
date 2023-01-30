@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+*{
+  font-family: 'Fredoka One', cursive;
+  overflow: hidden;
+  color: #E0BAFF;
+  background-color: black;
+}
+
+
+.Background{
+  position:absolute;
+  top: 60%;   /* the lower the higher it goes*/
+  left: 25%;  /* the lower the left it goes*/
+  opacity: 45%;
+  
+}
+
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 100px 100px;
+  
+  
+}
+
+a{
+  background : none;
+  color : #E0BAFF;
+  text-decoration : none;
+  transition : 0.5s;
+  }
+  
+  a:hover{
+  background : black;
+  color : purple;
+  }
+
+.logo {
+  width: 250px;
+  height: 250x;
+  animation: spin 10s linear infinite;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+
+
+.LogoP {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+.Icons { 
+  display: flex;
+  flex-direction: row;
+  margin: 0px 15px;
+  cursor: pointer;
+}
+
+.Menu {
+  display: grid; 
+  grid-template-columns: auto 100px; 
+  align-items: center; 
+}
+
+
+.Icons .User svg {
+  transition: 0.3s ease-in-out;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.Icons .User:hover svg {
+  stroke: purple;
+}
+
+.Icons .Bell svg {
+  transition: 0.3s ease-in-out;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.Icons .Bell:hover svg {
+  stroke: purple
+}
