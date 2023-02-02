@@ -6,6 +6,11 @@
   background-color: black;
 }
 
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
 
 .Background{
   position:absolute;
@@ -15,13 +20,15 @@
   
 }
 
-nav {
-  text-align: center;
+nav{
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  gap: 100px 100px;
-  
-  
+  gap: 100px;
+}
+
+.Home{
+  margin-left: 100px;
 }
 
 a{
@@ -51,8 +58,6 @@ a{
     transform: rotateY(360deg);
   }
 }
-
-
 
 .LogoP {
   display: flex;
@@ -97,4 +102,10 @@ h1 {
 
 .Icons .Bell:hover svg {
   stroke: purple
+}
+
+.items{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around
 }
